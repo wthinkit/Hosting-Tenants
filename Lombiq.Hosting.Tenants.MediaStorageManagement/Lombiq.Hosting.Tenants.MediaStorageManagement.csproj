@@ -41,11 +41,8 @@
     <PackageReference Include="System.Linq.Async" Version="6.0.1" />
   </ItemGroup>
 
-  <ItemGroup Condition="'$(NuGetBuild)' != 'true'">
-    <ProjectReference Include="..\..\..\Libraries\Lombiq.HelpfulLibraries\Lombiq.HelpfulLibraries.OrchardCore\Lombiq.HelpfulLibraries.OrchardCore.csproj" />
-  </ItemGroup>
 
-  <ItemGroup Condition="'$(NuGetBuild)' == 'true'">
+  <ItemGroup>
     <PackageReference Include="Lombiq.HelpfulLibraries.OrchardCore" Version="8.0.3-alpha.0.lmbq-249" />
   </ItemGroup>
 
